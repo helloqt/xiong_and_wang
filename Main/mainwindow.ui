@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_9">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="margin">
+     <number>2</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_8" stretch="0,10">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="10,1,1">
+         <property name="margin">
+          <number>2</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_21">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="btnConf">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>参数设置</string>
+             </property>
+             <property name="icon">
+              <iconset resource="png.qrc">
+               <normaloff>:/png/png toolbar/Kombine_toolbar_015.png</normaloff>:/png/png toolbar/Kombine_toolbar_015.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnTest">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>标定模式</string>
+             </property>
+             <property name="icon">
+              <iconset resource="png.qrc">
+               <normaloff>:/png/png toolbar/Kombine_toolbar_040.png</normaloff>:/png/png toolbar/Kombine_toolbar_040.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnStart">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>启动采集</string>
+             </property>
+             <property name="icon">
+              <iconset resource="png.qrc">
+               <normaloff>:/png/png toolbar/Kombine_toolbar_005.png</normaloff>:/png/png toolbar/Kombine_toolbar_005.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnStop">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>停止采集</string>
+             </property>
+             <property name="icon">
+              <iconset resource="png.qrc">
+               <normaloff>:/png/png toolbar/Kombine_toolbar_017.png</normaloff>:/png/png toolbar/Kombine_toolbar_017.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="btnShowConf">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>显示调节</string>
+             </property>
+             <property name="icon">
+              <iconset resource="png.qrc">
+               <normaloff>:/png/png toolbar/spliterButton.png</normaloff>:/png/png toolbar/spliterButton.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="btnBrowseMode">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>浏览模式</string>
+             </property>
+             <property name="icon">
+              <iconset resource="png.qrc">
+               <normaloff>:/png/png toolbar/Kombine_toolbar_028.png</normaloff>:/png/png toolbar/Kombine_toolbar_028.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widgetMain" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="layoutMain">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>552</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>5000</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0">
+         <item>
+          <widget class="QComboBox" name="comboBoxCommand">
+           <item>
+            <property name="text">
+             <string>启动声纳系统</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>停止声纳系统</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>设置孔径（1.5m，采样延时0）</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>设置孔径（3m，采样延时0）</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>设置孔径（3m，采样延时1000mm）</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>设置测量点密度（500ms）</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>设置测量点密度（200ms）</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>设置TVG（0x88）</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSendCommand">
+         <property name="text">
+          <string>发送命令</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="btnLoadFile">
+         <property name="text">
+          <string>加载文件</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnShowNext">
+         <property name="text">
+          <string>显示下一条</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,1">
+         <item>
+          <widget class="QPushButton" name="btnAutoShow">
+           <property name="text">
+            <string>开始自动显示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lEditAutoShow"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>接收数据串口:</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>串口</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboPort">
+              <item>
+               <property name="text">
+                <string>com1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>com2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>com3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyS0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyS1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyS2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyUSB0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyUSB1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyUSB2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttySAC0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttySAC1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttySAC2</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>波特率</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBaudRate">
+              <item>
+               <property name="text">
+                <string>115200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>230400</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>256000</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnOpenPort">
+            <property name="text">
+             <string>打开串口</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>接收深度串口:</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>串口</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboPortHeight">
+              <item>
+               <property name="text">
+                <string>com1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>com2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>com3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyS0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyS1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyS2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyUSB0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyUSB1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttyUSB2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttySAC0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttySAC1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>/dev/ttySAC2</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnOpenPortHeight">
+            <property name="text">
+             <string>打开串口</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="2,1">
+       <item>
+        <widget class="QPushButton" name="btnSeekToNodeIndex">
+         <property name="text">
+          <string>导航到高度索引</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lEditNodeIndex"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnTempFileSaveAs">
+       <property name="text">
+        <string>临时文件另存为</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>78</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="png.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShowConf</class>
+ <widget class="QWidget" name="ShowConf">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1">
+     <item>
+      <widget class="QGroupBox" name="gBGrayShow">
+       <property name="title">
+        <string>灰度显示</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,10">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>灰度阈值</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelGrayLimen">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>0%</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="btnThresholdPre">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../png.qrc">
+              <normaloff>:/png/png toolbar/Kombine_toolbar_007.png</normaloff>:/png/png toolbar/Kombine_toolbar_007.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="sliderGray">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnThresholdNext">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../png.qrc">
+              <normaloff>:/png/png toolbar/Kombine_toolbar_025.png</normaloff>:/png/png toolbar/Kombine_toolbar_025.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="picGrayDemo">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3,1">
+       <item>
+        <widget class="QGroupBox" name="gBWaveShow">
+         <property name="title">
+          <string>波形显示</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="3,1,2,1">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>波形增益</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnScalePre">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../png.qrc">
+                <normaloff>:/png/png toolbar/Kombine_toolbar_007.png</normaloff>:/png/png toolbar/Kombine_toolbar_007.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lEditWaveScale">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnScaleNext">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../png.qrc">
+                <normaloff>:/png/png toolbar/Kombine_toolbar_025.png</normaloff>:/png/png toolbar/Kombine_toolbar_025.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="3,1,2,1">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>每页波形数</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWaveCountPre">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../png.qrc">
+                <normaloff>:/png/png toolbar/Kombine_toolbar_007.png</normaloff>:/png/png toolbar/Kombine_toolbar_007.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lEditWaveCount">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWaveCountNext">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../png.qrc">
+                <normaloff>:/png/png toolbar/Kombine_toolbar_025.png</normaloff>:/png/png toolbar/Kombine_toolbar_025.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="2,5">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>显示剖面</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboProfiles">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>剖面X-X'</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>剖面Y-Y’</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>全选</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="gBShowMode">
+         <property name="title">
+          <string>显示类型</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QComboBox" name="comboShowMode">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>波形显示</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>灰度显示</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <property name="leftMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="btnReject">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>取消</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAccept">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../png.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>sliderGray</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>labelGrayLimen</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>122</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

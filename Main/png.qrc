@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/png">
+        <file>png toolbar/grayPng.png</file>
+        <file>png toolbar/Kombine_toolbar_005.png</file>
+        <file>png toolbar/Kombine_toolbar_007.png</file>
+        <file>png toolbar/Kombine_toolbar_015.png</file>
+        <file>png toolbar/Kombine_toolbar_017.png</file>
+        <file>png toolbar/Kombine_toolbar_025.png</file>
+        <file>png toolbar/Kombine_toolbar_029.png</file>
+        <file>png toolbar/Kombine_toolbar_039.png</file>
+        <file>png toolbar/Kombine_toolbar_040.png</file>
+        <file>png toolbar/spliterButton.png</file>
+        <file>png toolbar/Kombine_toolbar_028.png</file>
+    </qresource>
+</RCC>
